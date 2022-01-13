@@ -4,29 +4,32 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="icon" type="image/png" href="shopping-favicon.png" />
+        <title>Shopping card</title>
+        <link rel="stylesheet" href="style-form.css" />
         <script
             src="https://kit.fontawesome.com/4a193771ff.js"
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <header>
-            <h1>Shopping list</h1>
-            <ul>
-                <li>Main</li>
-                <li>List</li>
-                <li>About</li>
-            </ul>
+        <header class="top-menu">
+            <h1 class="top-menu__title">Shopping list</h1>
+            <nav>
+                <ul>
+                    <li class="top-menu__navegation-box"><a>Main</a></li>
+                    <li class="top-menu__navegation-box bold"><a>List</a></li>
+                    <li class="top-menu__navegation-box"><a>About</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
-            <section>
-                <i class="fas fa-plus-square"></i><icon></icon>
-                <h2>2/3 shopping cart</h2>
+            <section class="card-body__summary-bar">
+                <a href="index.html"><i class="fas fa-minus-circle"></i></a>
+                <h2 class="card-body__summary-text">2/3 items bought</h2>
             </section>
             <form>
-                <h2>Edit item</h2>
+                <h2 class="bigger-font">Edit item</h2>
                 <div class="form-example">
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" required />
