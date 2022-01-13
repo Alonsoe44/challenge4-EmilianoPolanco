@@ -4,41 +4,65 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="icon" type="image/png" href="shopping-favicon.png" />
+        <title>Shopping card</title>
+        <link rel="stylesheet" href="style.css" />
         <script
             src="https://kit.fontawesome.com/4a193771ff.js"
             crossorigin="anonymous"
         ></script>
     </head>
     <body>
-        <header>
-            <h1>Shopping list</h1>
-            <ul>
-                <li>Main</li>
-                <li>List</li>
-                <li>About</li>
-            </ul>
+        <header class="top-menu">
+            <h1 class="top-menu__title">Shopping list</h1>
+            <nav>
+                <ul>
+                    <li class="top-menu__navegation-box"><a>Main</a></li>
+                    <li class="top-menu__navegation-box bold"><a>List</a></li>
+                    <li class="top-menu__navegation-box"><a>About</a></li>
+                </ul>
+            </nav>
         </header>
-        <main>
-            <section>
-                <i class="fas fa-plus-square"></i><icon></icon>
-                <h2>2/3 shopping cart</h2>
+        <main class="card-body">
+            <section class="card-body__summary-bar">
+                <i class="fas fa-plus-circle"></i>
+                <h2 class="card-body__summary-text">2/3 items bought</h2>
             </section>
             <ul>
-                <li>
-                    <input type="checkbox" /><small>Bread</small
-                    ><small>0.75$</small><i class="fas fa-window-close"></i>
+                <li class="card-body__item">
+                    <div class="left-info">
+                        <input class="checkboxx" type="checkbox" /><small
+                            class="tached"
+                            >Bread</small
+                        >
+                    </div>
+                    <div class="right-info">
+                        <small>0.75$</small><i class="fas fa-window-close"></i>
+                    </div>
                 </li>
-                <li>
-                    <input type="checkbox" /><small>Bread</small
-                    ><small>0.75$</small><i class="fas fa-window-close"></i>
+                <li class="card-body__item">
+                    <div class="left-info">
+                        <input type="checkbox" /><small>Sugar</small>
+                    </div>
+                    <div class="right-info">
+                        <small>4.23$</small><i class="fas fa-window-close"></i>
+                    </div>
                 </li>
-                <li>
-                    <input type="checkbox" /><small>Bread</small
-                    ><small>0.75$</small><i class="fas fa-window-close"></i>
+                <li class="card-body__item">
+                    <div class="left-info">
+                        <input type="checkbox" /><small class="tached"
+                            >Bread</small
+                        >
+                    </div>
+                    <div class="right-info">
+                        <small>1.20$</small><i class="fas fa-window-close"></i>
+                    </div>
                 </li>
             </ul>
-            <small>1.95$</small>
+            <div class="line-separator"></div>
+            <div class="flex-end">
+                <small class="card-body__total-price">1.95$</small>
+            </div>
         </main>
     </body>
 </html>
